@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.carousel-contain {
+    position: relative;
+
+
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.list-img {
+    display: flex;
+    width: fit-content;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 30px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-left {
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+
+}
+
+.btn-right {
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* opacity: 0.5; */
+}
+
+.thumbnails {
+
+    width: 450px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumbnails-item {
+    width: fit-content;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.thumbnails-item:hover {
+    scale: 1.2;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.active {
+    opacity: 1;
+}
