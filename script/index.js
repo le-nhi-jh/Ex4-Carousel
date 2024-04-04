@@ -40,7 +40,7 @@ const mainFunc = () => {
     });
   });
   btnRigth.addEventListener("click", () => {
-    if (currentSlide >= 3) {
+    if (currentSlide >= slides.length - 1) {
       return;
     } else {
       currentSlide = currentSlide + 1;
